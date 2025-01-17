@@ -1,0 +1,11 @@
+http://10.12.250.250/.hidden/
+
+todo bruteforce password
+wget --mirror --no-parent --convert-links --adjust-extension --page-requisites --execute robots=off http://10.12.250.250/.hidden/
+
+find ./hidden_files -type f -iname "README" -exec cat {} +
+find ./hidden_files -type f -iname "README" -exec cat {} + | grep flag
+
+
+Hey, here is your flag : d5eec3ec36cf80dce44a896f961c1831a05526ec215693c8f2c39543497d4466
+d5eec3ec36cf80dce44a896f961c1831a05526ec215693c8f2c39543497d4466

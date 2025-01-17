@@ -1,0 +1,38 @@
+http://10.12.250.250/index.php?page=media&src=nsa
+
+we try to see if there is some access to file
+
+http://10.12.250.250/index.php?page=media&src=robots.txt
+http://10.12.250.250/index.php?page=media&src=admin
+
+then we try to find the file in a clean way so we try
+
+
+
+
+http://10.12.250.250/admin.php
+http://10.12.250.250/index.php?page=admin
+
+http://10.12.250.250/robots.txt
+
+
+
+User-agent: *
+Disallow: /whatever
+Disallow: /.hidden
+
+
+http://10.12.250.250/whatever/
+file with passwd
+root:437394baff5aa33daa618be47b75cb49
+https://md5decrypt.net/
+
+root:qwerty123@
+
+http://10.12.250.250/admin
+root:qwerty123@
+
+The flag is : d19b4823e0d5600ceed56d5e896ef328d7a2b9e7ac7e80f4fcdb9b10bcb3e7ff
+d19b4823e0d5600ceed56d5e896ef328d7a2b9e7ac7e80f4fcdb9b10bcb3e7ff 
+
+
